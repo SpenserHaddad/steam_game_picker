@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+<style >
+    .checkbox-grid li {
+        float: left;
+        width: 25%;
+    }
+</style>
+<body>
+    <ul id="friend_names" class="checkbox-grid">
+    {% for name in friend_names %}
+        <li><input type="checkbox" />{{name}}</li>
+    {% endfor %}
+    </ul>
+</body>
+{% endblock %}

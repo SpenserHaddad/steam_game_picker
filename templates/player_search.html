@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<body>
+    <div id="player_entry">
+        <form action="{{url_for('friends_list')}}" method="post">
+            <div>
+                <label for="steam_name">Enter Player Name:</label>
+                <br />
+                <input type="text" name="steam_name" />
+            </div>
+        </form>
+    </div>
+</body>
+{% endblock %}
